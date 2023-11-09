@@ -3,9 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="src/css/registerUser.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
-    
+    <div class="wrapper">
+        <span class="bg-animate"></span>
+        <span class="bg-animate2"></span>
+
+        <div class="form-box register">
+            <h2>ADMIN</h2>
+            <form action="#">
+                <div class="input-box animation" style="--i:16; --j:1;">
+					<input type="text" th:field="*{nombre}" required>
+					<label>Nombre</label>
+					<i class='bx bxs-envelope'></i>
+				</div>
+
+                <div class="input-box animation" style="--i:16; --j:1;">
+					<input type="text" th:field="*{apellido}" required>
+					<label>Apellido</label>
+					<i class='bx bxs-envelope'></i>
+				</div>
+				
+				<div class="input-box animation" style="--i:17; --j:2;">
+					<input type="email" th:field="*{correo}" required>
+					<label>Correo</label>
+					<i class='bx bxs-envelope'></i>
+				</div>
+
+                <div class="input-box animation" style="--i:17; --j:2;">
+					<input type="number" th:field="*{telefono}" required>
+					<label>Telefono</label>
+					<i class='bx bxs-envelope'></i>
+				</div>
+				
+				<div class="input-box animation" style="--i:18; --j:3;">
+					<input type="text" th:field="*{username}" required>
+					<label>Usuario</label>
+					<i class='bx bxs-user'></i>
+				</div>
+				
+				<div class="input-box animation" style="--i:20; --j:4;">
+					<input type="password" th:field="*{password}" required>
+					<label>Contraseña</label>
+					<i class='bx bxs-lock-alt'></i>
+				</div>
+                <button type="submit" class="btn">Registrate</button>
+                <!-- <div class="logreg-link">
+                    <p>Ya tienes una cuenta? <a href="#"
+                    class="login-link">Iniciar Sesion</a></p>
+                </div> -->
+            </form>
+        </div>
+
+        <div class="info-text register">
+            <h2>Registrar Usuario</h2>
+            <p>Completa los campos para ingresar un nuevo usuario.</p>
+        </div>
+
+    </div>
+
 </body>
 </html>
