@@ -22,7 +22,7 @@ router.post('/procesar', (req, res) => {
     existUser(user, password).then((result) => {
         if(result === true) {
             console.log("Datos enviado con éxito = "+user+""+password)
-            res.send('usuario logueado')
+            res.redirect(`/menuuser/${user}`)
         }else{
             res.send('Error User no Existe')
             }    
@@ -36,7 +36,7 @@ router.post('/admin', (req, res) => {
     existAdmin(user, password).then((result) => {
         if(result === true) {
             console.log("Datos enviado con éxito = "+user+""+password)
-            res.send('usuario logueado')
+            res.redirect(`/menuAdmin/${user}`)
         }else{
             res.send('Error User no Existe')
             }    
