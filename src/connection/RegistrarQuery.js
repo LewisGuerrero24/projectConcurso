@@ -1,9 +1,9 @@
 require('./conectiondb')
 const userModels = require('../models/users')
 
-const registrarUser =  (user,password) => {
-    const createUser =  new userModels({user: user, password: password})
-    createUser.save().then(() => console.log('UsuarioCreado'));
+const registrarUser =  (nombre, apellido,correo,telefono,user,password) => {
+    const createUser =  new userModels({name: nombre, lastname: apellido, phone: telefono, email: correo ,user: user, password: password})
+    return createUser.save();
 }
 
 

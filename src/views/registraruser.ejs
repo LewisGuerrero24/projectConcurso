@@ -15,39 +15,39 @@
 
         <div class="form-box register">
             <h2>ADMIN</h2>
-            <form action="#">
+            <form action="/regUsers" method="post">
                 <div class="input-box animation" style="--i:16; --j:1;">
-					<input type="text" th:field="*{nombre}" required>
+					<input type="text" th:field="*{nombre}"  name="nombre" required>
 					<label>Nombre</label>
 					<i class='bx bxs-envelope'></i>
 				</div>
 
                 <div class="input-box animation" style="--i:16; --j:1;">
-					<input type="text" th:field="*{apellido}" required>
+					<input type="text" th:field="*{apellido}" name="apellido">
 					<label>Apellido</label>
 					<i class='bx bxs-envelope'></i>
 				</div>
 				
 				<div class="input-box animation" style="--i:17; --j:2;">
-					<input type="email" th:field="*{correo}" required>
+					<input type="email" th:field="*{correo}"  name="correo"  required>
 					<label>Correo</label>
 					<i class='bx bxs-envelope'></i>
 				</div>
 
                 <div class="input-box animation" style="--i:17; --j:2;">
-					<input type="number" th:field="*{telefono}" required>
+					<input type="text" th:field="*{telefono}" name="telefono"  required>
 					<label>Telefono</label>
 					<i class='bx bxs-envelope'></i>
 				</div>
 				
 				<div class="input-box animation" style="--i:18; --j:3;">
-					<input type="text" th:field="*{username}" required>
+					<input type="text" th:field="*{username}" name= 'usuario'required>
 					<label>Usuario</label>
 					<i class='bx bxs-user'></i>
 				</div>
 				
 				<div class="input-box animation" style="--i:20; --j:4;">
-					<input type="password" th:field="*{password}" required>
+					<input type="password" th:field="*{password}" name="password" required>
 					<label>Contraseña</label>
 					<i class='bx bxs-lock-alt'></i>
 				</div>

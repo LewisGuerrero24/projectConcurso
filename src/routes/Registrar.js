@@ -1,5 +1,5 @@
 const express = require('express')
-const {existUser, existAdmin} = require('../connection/LoginQuery')
+const {registrarUser} = require('../connection/RegistrarQuery')
 
 const router = express.Router()
 
@@ -8,19 +8,20 @@ router.get('/registrousers', (req, res) => {
 })
 
 
-// router.post('/admin', (req, res) => {
-//     const user = req.body.usuario
-//     const password = req.body.password
-//     console.log(user+""+password)
-//     existAdmin(user, password).then((result) => {
-//         if(result === true) {
-//             console.log("Datos enviado con éxito = "+user+""+password)
-//             res.send('usuario logueado')
-//         }else{
-//             res.send('Error User no Existe')
-//             }    
-//     });
-// })
+
+router.post('/regUsers', (req, res) => {
+    const user = req.body.usuario
+    const password = req.body.password
+    const email = req.body.correo
+    const name = req.body.nombre
+    const apellido = req.body.apellido
+    const telefono = req.body.telefono
+
+    console.log(user+""+password)
+    registrarUser(name, apellido,email,telefono,user,password).then((
+        res.send("USUARIO CREADO")
+    ))  
+})
 
 
 module.exports = router
