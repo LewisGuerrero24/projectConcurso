@@ -1,9 +1,9 @@
 const express = require('express')
 
-const router = express.router()
+const router = express.Router()
 
 router.get('/loginusers', (req, res) => {
-        ress.render('loginusers')
+        res.render('loginusers')
 })
 
 router.get('/loginadmin', (req, res) => {
