@@ -3,6 +3,7 @@ const morgan = require("morgan");
 const path = require("path");
 const app = express();
 const routeLogin = require("./routes/Login")
+const routeRegistro = require("./routes/Registrar")
 app.set('port', 3000);
 require('ejs');
 const bodyParser =  require('body-parser')
@@ -21,6 +22,7 @@ app.get('/', (req, res) => {
 });
 
 app.use(routeLogin)
+app.use(routeRegistro)
 
 console.log(path.join(__dirname, 'views'))
 app.listen(app.get('port'));
