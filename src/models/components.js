@@ -10,7 +10,7 @@ const userSchema = new Schema({
     photo: String,
 })
 
-const user = model('Components',userSchema)
+const component = model('Components',userSchema)
 
 
-module.exports = user
+module.exports = component
