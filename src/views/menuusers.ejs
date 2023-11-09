@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Laboratorio de Ingeniería de Materiales</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        /* Estilos personalizados */
+        body {
+            background-image: url('https://www.uts.edu.co/sitio/wp-content/uploads/2020/08/IMG-20200815-WA0004.jpg'); /* Ruta de tu imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: #f0f0f0; /* Fallback en caso de que la imagen no se cargue */
+            color: #ffffff; /* Texto blanco */
+        }
+        .navbar {
+            background-color: #034001; /* Verde para el barra de navegación */
+            padding: 15px;
+        }
+        .navbar a {
+            color: #ffffff; /* Texto blanco en la barra de navegación */
+            margin-right: 20px; /* Separación entre las etiquetas 'a' */
+        }
+        .txtLab:hover {
+            color: white;
+        }
+
+        .info {
+            background-color: #fff; /* Fondo blanco para el contenido */
+            border: 1px solid #ddd; /* Borde del contenido */
+            border-radius: 5px; /* Bordes redondeados */
+            padding: 20px; /* Espaciado interior */
+            color: black;
+            text-align: center; /* Centra el contenido */
+        }
+
+        h2 {
+            color: #4CAF50; /* Verde para el título */
+        }
+
+        .custom-button {
+            background-color: #4CAF50; /* Fondo verde para los botones */
+            color: #ffffff; /* Texto blanco en los botones */
+            border: 1px solid #ddd; /* Borde del contenido */
+            border-radius: 5px; /* Bordes redondeados */
+            padding: 14px 20px; /* Espaciado interior */
+            cursor: pointer;
+            margin: 5px; /* Separación entre los botones */
+        }
+        .custom-button:hover {
+            background-color: #45A843; /* Cambia el color al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand txtLab" href="#">Laboratorio de Ingeniería de Materiales UTS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+        </div>
+    </nav>
+
+    <div class="container info mt-5">
+        <h2>Escoge la opción que deseas visualizar:</h2>
+        <div class="text-center">
+            <button type="button" class="btn btn-success custom-button">Equipos</button>
+            <button type="button" class="btn btn-success custom-button">Consumibles</button>
+            <button type="button" class="btn btn-success custom-button">Instrumentos</button>
+            <button type="button" class="btn btn-success custom-button">Reactivos</button>
+            <button type="button" class="btn btn-success custom-button">Componentes</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+

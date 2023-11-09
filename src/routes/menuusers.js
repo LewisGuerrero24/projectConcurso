@@ -7,5 +7,9 @@ router.get('/menuuser/:nombre', (req, res) => {
         res.render('menuusers')
 })
 
+router.get('/menuAdmin/:nombre', (req, res) => {
+        res.render('menuAdmin')
+})
+
 
 module.exports = router
